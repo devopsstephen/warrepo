@@ -22,5 +22,16 @@ pipeline{
                   sh 'mvn clean package'
               }
           }
+       stage('deploywarfile'){
+
+         steps{
+ 
+               sh '/opt/deploy.sh'
+
+    
+       }   
+     
+        }
+       
     }
 }
